@@ -4,10 +4,6 @@ import br.com.looplex.logging.LogContext;
 import br.com.looplex.logging.annotations.Loggable;
 import br.com.looplex.logging.saver.ILogContextSaver;
 
-import javax.ejb.Stateless;
-import javax.enterprise.context.ApplicationScoped;
-import javax.enterprise.context.Dependent;
-import javax.enterprise.inject.Any;
 import javax.inject.Inject;
 import javax.interceptor.AroundInvoke;
 import javax.interceptor.Interceptor;
