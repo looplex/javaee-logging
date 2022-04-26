@@ -3,10 +3,12 @@ package br.com.looplex.logging.saver;
 import br.com.looplex.logging.LogContext;
 import br.com.looplex.logging.annotations.LogLevel;
 
+import javax.enterprise.context.ApplicationScoped;
 import javax.interceptor.InvocationContext;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
+@ApplicationScoped
 public class LogContextSaver implements ILogContextSaver {
 
     public LogContext saveData(LogContext logContext, InvocationContext context) {
