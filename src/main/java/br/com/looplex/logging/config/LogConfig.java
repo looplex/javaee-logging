@@ -6,11 +6,9 @@ import br.com.looplex.logging.handler.ILogHandler;
 import br.com.looplex.logging.handler.LogHandler;
 import br.com.looplex.logging.printer.ILogPrinter;
 
-import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Produces;
 import javax.inject.Inject;
 
-@ApplicationScoped
 public class LogConfig {
 
     @Inject

@@ -7,10 +7,8 @@ import br.com.looplex.logging.formatter.LogFormatter;
 import br.com.looplex.logging.printer.ILogPrinter;
 import br.com.looplex.logging.printer.LogPrinter;
 
-import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Produces;
 
-@ApplicationScoped
 public class LogHandlerConfig {
 
     @Produces

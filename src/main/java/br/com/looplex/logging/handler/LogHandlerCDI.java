@@ -4,7 +4,6 @@ import br.com.looplex.logging.LogContext;
 import br.com.looplex.logging.annotations.Loggable;
 import br.com.looplex.logging.saver.ILogContextSaver;
 
-import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.interceptor.AroundInvoke;
 import javax.interceptor.Interceptor;
@@ -12,7 +11,6 @@ import javax.interceptor.InvocationContext;
 
 @Loggable
 @Interceptor
-@ApplicationScoped
 public class LogHandlerCDI {
 
     @Inject
