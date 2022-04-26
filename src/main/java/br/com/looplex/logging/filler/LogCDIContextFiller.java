@@ -3,10 +3,12 @@ package br.com.looplex.logging.filler;
 import br.com.looplex.logging.LogContext;
 import br.com.looplex.logging.annotations.LogLevel;
 
+import javax.enterprise.inject.Default;
 import java.time.Instant;
 
 import static java.util.Objects.nonNull;
 
+@Default
 public class LogCDIContextFiller implements ILogContextFiller {
 
     public LogContext fill(LogContext logContext) {
