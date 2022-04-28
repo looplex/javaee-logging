@@ -6,6 +6,7 @@ import br.com.looplex.logging.annotations.LogLevel;
 import javax.interceptor.InvocationContext;
 import java.io.Serializable;
 import java.util.Arrays;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 public class LogContextSaver implements ILogContextSaver, Serializable {
@@ -25,7 +26,7 @@ public class LogContextSaver implements ILogContextSaver, Serializable {
     private String getArgs(InvocationContext context) {
         return Arrays
                 .stream(context.getParameters())
-                .map(Object::toString)
+                .map(obj -> (Objects.nonNull(obj) ? obj.toString() : "null"))
                 .collect(Collectors.toList()).toString();
     }
 
