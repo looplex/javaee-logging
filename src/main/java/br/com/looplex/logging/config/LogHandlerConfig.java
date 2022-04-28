@@ -8,8 +8,9 @@ import br.com.looplex.logging.printer.ILogPrinter;
 import br.com.looplex.logging.printer.LogPrinter;
 
 import javax.enterprise.inject.Produces;
+import java.io.Serializable;
 
-public class LogHandlerConfig {
+public class LogHandlerConfig implements Serializable {
 
     @Produces
     public ILogContextFiller injectLogContextFiller() {

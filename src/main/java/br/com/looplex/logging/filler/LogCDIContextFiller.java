@@ -5,11 +5,12 @@ import br.com.looplex.logging.annotations.LogLevel;
 
 import javax.enterprise.inject.Alternative;
 import javax.enterprise.inject.Specializes;
+import java.io.Serializable;
 import java.time.Instant;
 
 import static java.util.Objects.nonNull;
 
-public class LogCDIContextFiller implements ILogContextFiller {
+public class LogCDIContextFiller implements ILogContextFiller, Serializable {
 
     public LogContext fill(LogContext logContext) {
         fillThrowableData(logContext);

@@ -4,10 +4,11 @@ import br.com.looplex.logging.LogContext;
 import br.com.looplex.logging.annotations.LogLevel;
 
 import javax.interceptor.InvocationContext;
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
-public class LogContextSaver implements ILogContextSaver {
+public class LogContextSaver implements ILogContextSaver, Serializable {
 
     public LogContext saveData(LogContext logContext, InvocationContext context) {
         logContext.getBody().put("caller", getCaller(context));
