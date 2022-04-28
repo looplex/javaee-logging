@@ -9,8 +9,7 @@ import java.time.Instant;
 
 import static java.util.Objects.nonNull;
 
-@Specializes
-public class LogCDIContextFiller extends LogContextFiller {
+public class LogCDIContextFiller implements ILogContextFiller {
 
     public LogContext fill(LogContext logContext) {
         fillThrowableData(logContext);
