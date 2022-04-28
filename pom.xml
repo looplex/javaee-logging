@@ -4,7 +4,7 @@
 
     <groupId>br.com.looplex</groupId>
     <artifactId>javaee-logging</artifactId>
-    <version>1.0.8</version>
+    <version>1.0.9</version>
     <packaging>jar</packaging>
 
     <name>javaee-logging</name>
@@ -13,7 +13,7 @@
         <dependency>
             <groupId>br.com.looplex</groupId>
             <artifactId>logging-core</artifactId>
-            <version>1.0.5</version>
+            <version>1.0.7</version>
         </dependency>
 
         <dependency>

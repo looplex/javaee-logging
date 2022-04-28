@@ -8,10 +8,11 @@ import javax.inject.Inject;
 import javax.interceptor.AroundInvoke;
 import javax.interceptor.Interceptor;
 import javax.interceptor.InvocationContext;
+import java.io.Serializable;
 
 @Loggable
 @Interceptor
-public class LogHandlerCDI {
+public class LogHandlerCDI implements Serializable {
 
     @Inject
     private ILogHandler logHandler;
